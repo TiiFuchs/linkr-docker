@@ -1,7 +1,7 @@
 version: '3'
 services:
   linkr:
-    build: linkr
+    image: tiirex9/linkr
     depends_on:
       - mysql
     volumes:
