@@ -9,6 +9,8 @@ services:
     #ports:
       #- 80:80
     env_file: .env
+    networks:
+      - default
 
   mysql:
     image: mariadb
@@ -17,7 +19,13 @@ services:
     env_file: .env
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+    networks:
+      - default
 
   redis:
     image: redis
+    networks:
+      - default
 
+networks:
+  ? default
