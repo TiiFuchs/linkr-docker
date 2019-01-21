@@ -4,11 +4,6 @@ services:
     image: tiirex9/linkr
     depends_on:
       - mysql
-    volumes:
-      - ./config:/config
-    #ports:
-      #- 80:80
-    env_file: .env
     networks:
       - default
 
@@ -16,7 +11,6 @@ services:
     image: mariadb
     volumes:
       - ./data:/var/lib/mysql
-    env_file: .env
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
     networks:
