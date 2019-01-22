@@ -10,18 +10,21 @@ services:
     image: tiirex9/linkr
     depends_on:
       - mysql
-    ports:
-      - 5000:80
     env_file: .env
 
   mysql:
     image: mariadb
     volumes:
       - linkr-data:/var/lib/mysql
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
     env_file: .env
 
   redis:
     image: redis
+
+volumes:
+  ? linkr-data
 ```
 
 Since **Linkr** needs a little bit on configuration you should create an .env file with any of these variables you want to override. For an explanation of the variables head over to the official GitHub Repo of [Linkr](https://github.com/LINKIWI/linkr#configuration).
