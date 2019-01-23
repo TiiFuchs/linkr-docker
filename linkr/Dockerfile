@@ -1,5 +1,5 @@
 FROM httpd:alpine
-MAINTAINER Tii <mail@tii.one>
+LABEL maintainer="Tii <mail@tii.one>"
 
 RUN set -e \
   && apk add python py2-pip npm apache2-mod-wsgi \
