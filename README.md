@@ -41,8 +41,8 @@ Since **Linkr** needs a little bit on configuration you should create an .env fi
 | RECAPTCHA_SECRET_KEY     | *null*                |
 | PIWIK_URL                | *null*                |
 | PIWIK_SITEID             | *null*                |
-| SENTRY_CLIENT_DSN        | *null*                |
-| SENTRY_SERVER_DSN        | *null*                |
+| SENTRY_CLIENT_DSN        | *empty*                |
+| SENTRY_SERVER_DSN        | *empty*                |
 | MYSQL_HOST               | localhost             |
 | MYSQL_USER               | linkr                 |
 | MYSQL_PASSWORD           | password              |
