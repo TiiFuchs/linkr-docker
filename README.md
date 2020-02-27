@@ -41,13 +41,13 @@ Since **Linkr** needs a little bit on configuration you should create an .env fi
 | RECAPTCHA_SECRET_KEY     | *null*                |
 | PIWIK_URL                | *null*                |
 | PIWIK_SITEID             | *null*                |
-| SENTRY_CLIENT_DSN        | *empty*                |
-| SENTRY_SERVER_DSN        | *empty*                |
-| MYSQL_HOST               | localhost             |
+| SENTRY_CLIENT_DSN        | *empty*               |
+| SENTRY_SERVER_DSN        | *empty*               |
+| MYSQL_HOST               | mysql                 |
 | MYSQL_USER               | linkr                 |
 | MYSQL_PASSWORD           | password              |
 | MYSQL_DATABASE           | linkr                 |
-| REDIS_HOST               | localhost             |
+| REDIS_HOST               | redis.                |
 | REDIS_PORT               | 6379                  |
 | REDIS_PASSWORD           | password              |
 | STATSD_HOST              | localhost             |
